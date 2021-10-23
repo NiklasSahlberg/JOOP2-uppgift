@@ -11,7 +11,6 @@ import java.util.Random;
 public class Puzzle implements ActionListener {
 
     JButton myResetButton,clearButton;
-    JButton one,two,three,four,five,six,seven,eight,nine,ten,eleven,twelve,thirteen,fourteen,fifteen;
     JPanel puzzle;
     JLabel test;
     JButton b[] = new JButton[16];
@@ -26,9 +25,6 @@ public class Puzzle implements ActionListener {
         main.setLayout(new BorderLayout());
 
          puzzle = new JPanel(new GridLayout(4,4,4,4));
-         one = new JButton("1");        two = new JButton("2");         three = new JButton("3");       four = new JButton("4");          five = new JButton("5");
-         six = new JButton("6");        seven = new JButton("7");       eight = new JButton("8");       nine = new JButton("9");          ten = new JButton("10");
-         eleven = new JButton("11");    twelve = new JButton("12");     thirteen = new JButton("13");   fourteen = new JButton("14");     fifteen = new JButton("15");
          test = new JLabel("");
 
         ArrayList<Integer> numbers = new ArrayList<Integer>();
@@ -47,7 +43,6 @@ public class Puzzle implements ActionListener {
 
 
         puzzle.add(test);
-        fifteen.addActionListener(this);
         JPanel resetPanel = new JPanel();
         myResetButton = new JButton("Reset");
         clearButton = new JButton("clear");
